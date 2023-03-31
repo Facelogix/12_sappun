@@ -13,7 +13,7 @@ $txt2Color:#aaa;
 }
 //-----------------------
 //--------------------skip
-.link,.lang, .all_nav, .sub {display: none;}
+/* .link,.lang, .all_nav, .sub {display: none;} */
 //design
 #popup {
     background-color:$bgColor ;
@@ -64,6 +64,13 @@ header {text-align: center; margin: 0 auto;
                 }
                 
             }
+        }
+        .all_nav {
+            display: block; background:$wh; border: 1px solid $txt2Color;
+            border-radius: 10px;
+            position: fixed; left: 50%; top: 50%; transform: translate(-50%,-49%);
+            width: 700px; height:500px; z-index: 999;
+            text-align: center; line-height: 500px;
         }
     }
     .headerBottom {/* background-color: brown; */ 

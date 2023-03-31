@@ -1,7 +1,4 @@
-.link, .lang, .all_nav, .sub {
-  display: none;
-}
-
+/* .link,.lang, .all_nav, .sub {display: none;} */
 #popup {
   background-color: #eee;
   padding: 10px;
@@ -72,6 +69,21 @@ header .headerTop .right li a span {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+header .headerTop .all_nav {
+  display: block;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -49%);
+  width: 700px;
+  height: 500px;
+  z-index: 999;
+  text-align: center;
+  line-height: 500px;
 }
 header .headerBottom { /* background-color: brown; */ }
 header .headerBottom nav {
