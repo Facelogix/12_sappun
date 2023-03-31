@@ -1,0 +1,12 @@
+//변수 지정
+$borderColor:#ff7f50;
+$txt1Color:#222;
+$bgColor:#eee;
+$bestColor:#ffe4c4;
+$orderColor:#000080;
+$txt2Color:#aaa;
+//mixin
+//-----------------------
+#popup {
+    background-color:$bgColor ;
+}
