@@ -1,4 +1,7 @@
-/* .link,.lang, .all_nav, .sub {display: none;} */
+.link, .lang {
+  display: none;
+}
+
 #popup {
   background-color: #eee;
   padding: 10px;
@@ -85,6 +88,14 @@ header .headerTop .all_nav {
   text-align: center;
   line-height: 500px;
 }
+header .headerTop .all_nav .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px;
+}
 header .headerBottom { /* background-color: brown; */ }
 header .headerBottom nav {
   width: 1200px;
@@ -121,4 +132,53 @@ header .headerBottom nav > ul > li .sub li a {
   padding: 10px;
   display: block;
   font-size: 0.75rem;
+}
+
+main #right_popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  height: 100%;
+  background: #ffe4c4;
+}
+main #right_popup #popup_btn {
+  background: #fff;
+  width: 30px;
+  position: fixed;
+  top: 50%;
+  right: 500px;
+  translate: -50%, 0;
+}
+main #right_popup #popup_btn a {
+  border: 1px solid #222;
+}
+main #right_popup #popup_btn a img {
+  width: 100%;
+}
+main #right_popup #popup_btn a:first-child {
+  background: #ff7f50;
+}
+main .contents {
+  background: #fff;
+  width: 500px;
+  text-align: center;
+}
+main .contents .info img {
+  width: 50%;
+}
+main .contents .info_contents span {
+  color: #aaa;
+}
+main .list_user {
+  text-align: left;
+}
+main .list_board {
+  text-align: left;
+}
+main .todayView {
+  text-align: left;
+}
+main .service {
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */

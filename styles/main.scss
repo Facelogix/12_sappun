@@ -13,7 +13,7 @@ $txt2Color:#aaa;
 }
 //-----------------------
 //--------------------skip
-/* .link,.lang, .all_nav, .sub {display: none;} */
+.link,.lang{display: none;}
 //design
 #popup {
     background-color:$bgColor ;
@@ -71,6 +71,10 @@ header {text-align: center; margin: 0 auto;
             position: fixed; left: 50%; top: 50%; transform: translate(-50%,-49%);
             width: 700px; height:500px; z-index: 999;
             text-align: center; line-height: 500px;
+            .close {
+                position:absolute; right: 20px; top: 20px;
+                font-size: 1.5rem; font-weight: 700; padding: 10px;
+            }
         }
     }
     .headerBottom {/* background-color: brown; */ 
@@ -97,4 +101,44 @@ header {text-align: center; margin: 0 auto;
             }
         }
     }
+}//e:header
+main {
+    #right_popup {
+        position: fixed;top: 0; right: 0; z-index: 9999;
+        height: 100%;
+        background: #ffe4c4;
+        #popup_btn {background: #fff; width: 30px;
+            position: fixed; top: 50%; right:500px;
+            translate: -50%,0;
+            a {
+                img{width: 100%;}
+                border: 1px solid #222;
+            }
+            a:first-child {background:#ff7f50 ;}
+        }
+    }
+    .contents {background: #fff; width: 500px;  text-align: center;
+        .info {img{width:50%;}}
+        .info_contents {
+            span {color: #aaa;}
+        }
+    }
+    .list_user {text-align: left;
+        a {
+            span {}
+        }
+    }
+    .list_board {text-align: left;
+        a {}
+    }
+    .todayView {text-align: left;
+        dt {}
+        dd {img{}}
+    }
+    .service {text-align: left;
+        dt {}
+        dd {}
+    }
 }
+
+
