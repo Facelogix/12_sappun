@@ -105,39 +105,73 @@ header {text-align: center; margin: 0 auto;
 main {
     #right_popup {
         position: fixed;top: 0; right: 0; z-index: 9999;
-        height: 100%;
-        background: #ffe4c4;
-        #popup_btn {background: #fff; width: 30px;
-            position: fixed; top: 50%; right:500px;
+        display: flex; align-items: center;
+        
+        border:2px solid #222; padding: 20px;
+        background: #fff;
+        #popup_btn {background: #fff; 
+            position: fixed; top: 40%; right:545px;
             translate: -50%,0;
-            a {
-                img{width: 100%;}
+            display: flex; flex-flow: column nowrap;
+                justify-content: center; align-items: center;
+            a {width: 100%; padding: 5px; text-align: center;
+                
+                img{
+                }
                 border: 1px solid #222;
             }
             a:first-child {background:#ff7f50 ;}
+            a:nth-child(4) {}
+            a:nth-child(5) {}
         }
     }
     .contents {background: #fff; width: 500px;  text-align: center;
+        height: 100vh;
         .info {img{width:50%;}}
-        .info_contents {
-            span {color: #aaa;}
+        .info_contents {margin: 30px 0;
+            span {
+                color: #aaa;
+                line-height: 1.5;
+            }
         }
     }
     .list_user {text-align: left;
-        a {
-            span {}
+        display: flex; flex-flow: row wrap;
+        margin-bottom: 30px;
+        
+        a {margin-right: 10px;
+            text-transform: uppercase; font-size: 1.1rem; line-height: 1.5;
+            width: 45%; border-bottom: 1px solid #222;
+            span {color: #ff7f50;}
         }
     }
     .list_board {text-align: left;
-        a {}
+        display: flex; flex-flow: row wrap;
+        margin-bottom: 30px;
+        a {margin-right: 10px;
+            width: 45%; border-bottom: 1px solid #222;
+            text-transform: uppercase; font-size: 1.1rem; line-height: 1.5;
+        }
     }
     .todayView {text-align: left;
-        dt {}
-        dd {img{}}
+        dt {
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        dd {width: 30%; margin-bottom: 20px;
+            img{width: 100%;}}
     }
     .service {text-align: left;
-        dt {}
-        dd {}
+        dt {margin-bottom: 20px;
+            font-weight: 700;}
+        dd {
+            margin: 10px 0;
+        }
+        dd:first-of-type {font-size: 2rem;}
+        dd:nth-child(3) {font: 1.5rem; text-transform:uppercase;
+        }
+        dd:nth-child(4) {font: 1.5rem; text-transform:uppercase;
+        }
     }
 }
 

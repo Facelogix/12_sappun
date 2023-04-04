@@ -10,7 +10,12 @@ const all_nav_close = document.querySelector('header .all_nav .close')
 //3. ACC gnb + sub
 const nav_acc = document.querySelectorAll('nav>ul>li')
 const nav_acc_sub = document.querySelectorAll('nav>ul>li>.sub')
+//----------
+const right_popup = document.querySelector('#right_popup')
+const popup_btn = document.querySelector('#popup_btn>a:first-child')
+
 //출력 확인
+console.log(popup_btn,right_popup)
 console.log(kr_lnb,kr_lnb_open)
 console.log(all_nav,all_nav_open)
 console.log(nav_acc,nav_acc_sub)
@@ -45,4 +50,16 @@ kr_lnb.addEventListener('mouseover',function(){
 
 kr_lnb.addEventListener('mouseout',function(){
     kr_lnb_open.style.display='none'
+})
+// main - right _ popup
+
+right_popup.style.transform='translateX(550px)'
+
+popup_btn.addEventListener('click',function(){
+    right_popup.style.transition = 'all 0.8s'
+    right_popup.style.transform='translateX(0)'
+})
+popup_btn.addEventListener('mouseover',function(){
+    right_popup.style.transition = 'all 0.8s'
+    right_popup.style.transform='translateX(550px)'
 })
