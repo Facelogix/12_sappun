@@ -246,4 +246,160 @@ main .service dd:nth-child(3) {
 main .service dd:nth-child(4) {
   font: 1.5rem;
   text-transform: uppercase;
+}
+main .event {
+  /* background-color: #ffe4c4; */
+  width: 1200px;
+  text-align: center;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  justify-content: space-between;
+}
+main .event a {
+  width: 100%;
+}
+main .event a img {
+  width: 100%;
+}
+main .event a {
+  margin-right: 0;
+}
+main .best {
+  width: 1200px; /* background-color: #ffe4c4; */
+  text-align: center;
+  margin: 0 auto;
+}
+main .best h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+main .best ul {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(3, 32.5%);
+  justify-content: space-between;
+}
+main .best ul li {
+  width: 100%;
+  margin-bottom: 50px;
+}
+main .best ul li a {
+  width: 100%;
+}
+main .best ul li a img {
+  width: 100%;
+}
+main .best ul li h2 {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+main .best ul li p {
+  margin-bottom: 20px;
+}
+main .best ul li p span {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+main .best ul li .btm {
+  border-top: 1px solid #aaa;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+main .best ul li .btm .size {
+  font-size: 0.75rem;
+  width: 50%;
+}
+main .best ul li .btm .review {
+  font-size: 0.75rem;
+  width: 50%;
+  color: #ff7f50;
+  text-align: right;
+}
+main .best ul li .btm p {
+  margin: 10px 0;
+}
+main .best ul li .btm p span {
+  background: #aaa;
+  margin-right: 5px;
+  color: #fff;
+  padding: 5px;
+}
+main .best ul li .btm p .best {
+  background: #ffe4c4;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+main .best ul li .btm p .order {
+  background: #000080;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+main .shop {
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+  background: url(../images/made_img.jpg);
+  background-size: cover;
+  padding-bottom: 300px;
+}
+main .shop .title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+main .shop .title h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+main .shop .title p a {
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  color: #fff;
+}
+
+footer {
+  border-top: 1px solid #222;
+}
+footer .container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+footer .container .f_top a {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #aaa;
+  margin-right: 30px;
+}
+footer .container .f_top a:nth-child(2) {
+  color: #222;
+}
+footer .container .f_top a:last-child {
+  margin: 0;
+}
+footer .container address {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin-top: 30px;
+}
+footer .container p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
 }/*# sourceMappingURL=main.css.map */
