@@ -1,0 +1,102 @@
+.container {
+    .visual_wrap {
+        p {
+            img{}
+        }
+    }
+    .item_wrap {
+        h1 {}
+        .list {
+            li {
+                a {
+                    .listImg {
+                        img{}
+                    }
+                    h2 {}
+                    p{}
+                }
+            }
+        }
+    }
+    .info_wrap {
+        .info_lnb {
+            a {}
+        }
+        p {
+            img {}
+        }
+    }
+    .guide_wrap {
+        .guide_lnb {
+            a {}
+        }
+        p {
+            img {}
+        }
+    }
+    .review_wrap {
+        .review_lnb {
+            a {}
+        }
+        p {
+            img {}
+        }
+    }
+}
+aside {
+    a {
+        img {}
+    }
+    .top {
+        li {
+            span:first-child {}
+            span:last-child {}
+        }
+    }
+    .option {
+        li {
+            h2 {}
+            #color_select {
+                option {}
+            }
+        }
+        li {
+            h2 {}
+            #heel_select {
+                option {}
+            }
+        }
+        li {
+            h2 {}
+            #size_select {
+                option {}
+            }
+        }
+    }
+    .order {
+        .titlePrice {
+            .title {}
+            .price {}
+        }
+        .buy {a{}}
+        .cart {a{}}
+        .view {a{}}
+        #more {
+            .contents {
+                .title {
+                    h3 {}
+                    a {}
+                }
+                #txt {span{}}
+                #graph {
+                    span{}
+                    span{}
+                }
+            }
+        }
+        .review {
+            span {}
+            a {}
+        }
+    }
+}
