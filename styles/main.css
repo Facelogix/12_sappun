@@ -330,18 +330,15 @@ main .best ul li .btm p span {
   margin-right: 5px;
   color: #fff;
   padding: 5px;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
 }
 main .best ul li .btm p .best {
   background: #ffe4c4;
-  font-size: 0.75rem;
-  line-height: 1.4;
-  letter-spacing: -0.02em;
 }
 main .best ul li .btm p .order {
   background: #000080;
-  font-size: 0.75rem;
-  line-height: 1.4;
-  letter-spacing: -0.02em;
 }
 main .shop {
   width: 100%;
