@@ -1,1 +1,175 @@
-/*# sourceMappingURL=sub.css.map */
+main {
+  width: 1200px;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+}
+main .container {
+  width: calc(100% - 380px);
+}
+main .container .visual_wrap {
+  margin-bottom: 50px;
+}
+main .container .visual_wrap p img {
+  width: 100%;
+}
+main .container .item_wrap {
+  width: 100%;
+  margin-bottom: 50px;
+}
+main .container .item_wrap h1 {
+  margin-bottom: 50px;
+  background: #ffe4c4;
+  text-align: center;
+}
+main .container .item_wrap .list {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+main .container .item_wrap .list li {
+  width: 33%;
+}
+main .container .item_wrap .list li a .listImg img {
+  width: 100%;
+}
+main .container .info_wrap {
+  margin-bottom: 50px;
+}
+main .container .info_wrap .info_lnb {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #aaa;
+  padding: 10px;
+}
+main .container .info_wrap .info_lnb a {
+  margin-right: 20px;
+}
+main .container .info_wrap p img {
+  width: 100%;
+}
+main .container .guide_wrap {
+  margin-bottom: 50px;
+}
+main .container .guide_wrap .guide_lnb {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #aaa;
+  padding: 10px;
+}
+main .container .guide_wrap p img {
+  width: 100%;
+}
+main .container .review_wrap .review_lnb {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #aaa;
+  padding: 10px;
+}
+main .container .review_wrap p img {
+  width: 100%;
+}
+main aside {
+  width: 380px;
+  height: 100vh; /* background: pink; */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+}
+main aside a {
+  width: 30px;
+  height: 30px;
+}
+main aside .top li {
+  display: flex;
+  justify-content: space-between;
+}
+main aside .top li span:first-child {
+  width: 50%;
+}
+main aside .option {
+  border-bottom: 1px solid #aaa;
+}
+main aside .option li {
+  display: flex;
+  justify-content: space-between;
+}
+main aside .option li h2 {
+  width: 30%;
+}
+main aside .option li #color_select {
+  width: 70%;
+}
+main aside .option li #color_select option {
+  width: 100%;
+}
+main aside .option li h2 {
+  width: 30%;
+}
+main aside .option li #heel_select {
+  width: 70%;
+}
+main aside .option li h2 {
+  width: 30%;
+}
+main aside .option li #size_select {
+  width: 70%;
+}
+main aside .order .titlePrice {
+  display: flex;
+  justify-content: space-between;
+}
+main aside .order .buy {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+main aside .order .buy a {
+  width: 100%;
+  background: #ff7f50;
+  display: block;
+}
+main aside .order .cart {
+  text-align: center;
+  margin-right: 10px;
+  display: inline-block;
+  width: 48%;
+  border: 1px solid #ff7f50;
+}
+main aside .order .view {
+  text-align: center;
+  display: inline-block;
+  width: 48%;
+  border: 1px solid #ff7f50;
+}
+main aside .order #more {
+  border: 1px dashed #aaa;
+  width: 100%;
+  padding: 20px;
+}
+main aside .order #more .contents #graph span {
+  background: #aaa;
+  width: 100%;
+  display: inline-block;
+  height: 15px;
+}
+main aside .order #more .contents #graph span span {
+  background: #ff69b4;
+  width: 83%;
+  display: inline-block;
+  height: 15px;
+}
+main aside .order .review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main aside .order .review span {
+  width: 45%;
+}
+main aside .order .review a {
+  width: 30%;
+  border: 1px solid #222;
+  text-align: center;
+  padding: 10px 0 25px;
+}/*# sourceMappingURL=sub.css.map */

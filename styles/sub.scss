@@ -1,102 +1,149 @@
-.container {
-    .visual_wrap {
-        p {
-            img{}
-        }
-    }
-    .item_wrap {
-        h1 {}
-        .list {
-            li {
-                a {
-                    .listImg {
-                        img{}
-                    }
-                    h2 {}
-                    p{}
-                }
-            }
-        }
-    }
-    .info_wrap {
-        .info_lnb {
-            a {}
-        }
-        p {
-            img {}
-        }
-    }
-    .guide_wrap {
-        .guide_lnb {
-            a {}
-        }
-        p {
-            img {}
-        }
-    }
-    .review_wrap {
-        .review_lnb {
-            a {}
-        }
-        p {
-            img {}
-        }
-    }
+//변수 지정
+$wh:#fff;
+$borderColor:#ff7f50;
+$txt1Color:#222;
+$bgColor:#eee;
+$bestColor:#ffe4c4;
+$orderColor:#000080;
+$txt2Color:#aaa;
+$order_bar:#ff69b4;
+//-------------------mixin
+@mixin flex-center {
+    display: flex; flex-flow: row nowrap;
+    align-items: center; justify-content: center;
 }
-aside {
-    a {
-        img {}
-    }
-    .top {
-        li {
-            span:first-child {}
-            span:last-child {}
-        }
-    }
-    .option {
-        li {
-            h2 {}
-            #color_select {
-                option {}
+//전체 w 1200px
+// 주문 영역 w 380px
+main { width: 1200px;  position: relative; 
+    display: flex; flex-flow: row nowrap;
+    margin: 0 auto;
+    .container { width: calc(100% - 380px);  
+        .visual_wrap {margin-bottom: 50px;
+            p {
+                img{width: 100%;}
             }
         }
-        li {
-            h2 {}
-            #heel_select {
-                option {}
-            }
-        }
-        li {
-            h2 {}
-            #size_select {
-                option {}
-            }
-        }
-    }
-    .order {
-        .titlePrice {
-            .title {}
-            .price {}
-        }
-        .buy {a{}}
-        .cart {a{}}
-        .view {a{}}
-        #more {
-            .contents {
-                .title {
-                    h3 {}
-                    a {}
-                }
-                #txt {span{}}
-                #graph {
-                    span{}
-                    span{}
+        .item_wrap {width: 100%;
+            margin-bottom: 50px;
+            h1 {margin-bottom: 50px; background: #ffe4c4; text-align: center;}
+            .list {width: 100%;
+                display: flex; flex-flow: row nowrap;
+                justify-content: space-between;
+                li {width: 33%;
+                    a {
+                        .listImg {
+                            img{width: 100%;}
+                        }
+                        h2 {}
+                        p{}
+                    }
                 }
             }
         }
-        .review {
-            span {}
-            a {}
+        .info_wrap {margin-bottom: 50px;
+            .info_lnb {margin-bottom: 50px; border-bottom: 1px solid $txt2Color;
+                padding: 10px;
+                a {margin-right: 20px; }
+            }
+            p {
+                img {width: 100%;}
+            }
+        }
+        .guide_wrap {margin-bottom: 50px;
+            .guide_lnb {margin-bottom: 50px; border-bottom: 1px solid $txt2Color;
+                padding: 10px;
+                a {}
+            }
+            p {
+                img {width: 100%;}
+            }
+        }
+        .review_wrap {
+            .review_lnb {margin-bottom: 50px; border-bottom: 1px solid $txt2Color;
+                padding: 10px;
+                a {}
+            }
+            p {
+                img {width: 100%;}
+            }
+        }
+    }
+    aside {width: 380px; height: 100vh; /* background: pink; */ 
+        position:sticky; top: 0; padding: 20px;
+        a {width: 30px; height: 30px;
+            img {}
+        }
+        .top {
+            li {display: flex; 
+                justify-content: space-between;
+                span:first-child {width: 50%;}
+                span:last-child {}
+            }
+        }
+        .option {border-bottom: 1px solid $txt2Color;
+            li {display: flex; 
+                justify-content: space-between;
+                h2 {width: 30%;}
+                #color_select {width: 70%;
+                    option {width: 100%;}
+                }
+            }
+            li {
+                h2 {width: 30%;}
+                #heel_select {width: 70%;
+                    option {}
+                }
+            }
+            li {
+                h2 {width: 30%;}
+                #size_select {width: 70%;
+                    option {}
+                }
+            }
+        }
+        .order {
+            .titlePrice {display: flex;
+                justify-content: space-between;
+                .title {}
+                .price {}
+            }
+            .buy {width: 100%; text-align: center;padding-top: 10px;
+                a{width: 100%; background: $borderColor;
+                    display: block; 
+                }}
+            .cart {text-align: center; margin-right: 10px;
+                display: inline-block;width: 48%; border: 1px solid $borderColor;
+                a{}}
+            .view {text-align: center;
+                display: inline-block; width: 48%; border: 1px solid $borderColor;
+                a{}}
+            #more {border:1px dashed $txt2Color; width: 100%; padding: 20px;
+                .contents {
+                    .title {
+                        h3 {}
+                        a {}
+                    }
+                    #txt {span{}}
+                    #graph {
+                        span{
+                            background: $txt2Color; width: 100%;
+                            display: inline-block; height: 15px;
+                            span{
+                                background: $order_bar; width: 83%;
+                            display: inline-block; height: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .review {display: flex; justify-content: space-between;
+                align-items: center;
+                span {width: 45%;}
+                a {width: 30%;
+                    border: 1px solid $txt1Color; text-align: center;
+                    padding: 10px 0 25px;
+                }
+            }
         }
     }
 }

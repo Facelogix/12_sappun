@@ -69,6 +69,7 @@ header .headerTop .right li a span {
   position: absolute;
   left: -50%;
   top: 30px;
+  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
